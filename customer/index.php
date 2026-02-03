@@ -110,7 +110,7 @@ require_once '../partials/header.php';
                     <div style="min-width: 150px;">
                         <img src="<?php echo BASE_URL; ?>assets/img/services/${s.image}" onerror="this.src='https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=200&auto=format'" style="width: 100%; border-radius: 4px; margin-bottom: 8px;">
                         <b style="font-size: 14px;">${s.name}</b><br>
-                        <span style="color: var(--primary); font-weight: 700;">$${s.price}/hr</span><br>
+                        <span style="color: var(--primary); font-weight: 700;">K${s.price}/hr</span><br>
                         <a href='<?php echo BASE_URL; ?>service-details.php?id=${s.id}' style="color: var(--primary); font-size: 12px; font-weight: 600;">View Details</a>
                     </div>
                 `);

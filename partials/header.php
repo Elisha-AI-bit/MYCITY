@@ -1,5 +1,5 @@
-<?php require_once '../includes/config.php'; ?>
-<?php require_once '../includes/functions.php'; ?>
+<?php require_once dirname(__DIR__) . '/includes/config.php'; ?>
+<?php require_once dirname(__DIR__) . '/includes/functions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
