@@ -5,9 +5,9 @@
 
 // Database Configuration
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'mycity_db');
-define('DB_USER', 'root');
-define('DB_PASS', ''); // Default WAMP password is empty
+define('DB_NAME', 'bslimted_mycity');
+define('DB_USER', 'bslimted_mubita');
+define('DB_PASS', 'Rabs@#12345'); // Default WAMP password is empty
 
 // Site Configuration
 define('SITE_NAME', 'MYCITY');

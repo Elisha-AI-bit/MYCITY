@@ -1,0 +1,36 @@
+# ==============================
+# PHP SETTINGS (cPanel managed)
+# ==============================
+<IfModule php8_module>
+   php_flag display_errors On
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 128M
+   php_value post_max_size 8M
+   php_value upload_max_filesize 2M
+</IfModule>
+
+<IfModule lsapi_module>
+   php_flag display_errors On
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 128M
+   php_value post_max_size 8M
+   php_value upload_max_filesize 2M
+</IfModule>
+
+# ==============================
+# REWRITE RULES (SAFE FOR CSS/JS)
+# ==============================
+RewriteEngine On
+
+# Allow CSS, JS, images, fonts
+RewriteCond %{REQUEST_URI} \.(css|js|png|jpg|jpeg|gif|svg|webp|woff|woff2|ttf|eot|ico)$ [NC]
+RewriteRule .* - [L]
+
+# Route everything else to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
