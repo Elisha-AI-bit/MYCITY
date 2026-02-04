@@ -17,6 +17,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- CSS -->
+     <link rel="stylesheet" href="https://mycity.bslimted.com/assets/css/style.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css">
 
     <!-- Leaflet JS (Optional - included only if needed) -->
